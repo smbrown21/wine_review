@@ -1,8 +1,7 @@
 <h1>Wine</h1>
-<p>Available as of 2/18/2013</p>
+<p>Available as of <%= formatted_time(@available_at) %></p>
 <ol>
-	<li>Wine 1</li>
-	<li>Wine 2</li>
-	<li>Wine 3</li>
-	<li>Wine 4</li>
+<% @wine.each do |wine| %>
+<li><%= wine %></li>
+<% end %>
 </ol>
