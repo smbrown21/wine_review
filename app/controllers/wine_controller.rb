@@ -3,4 +3,9 @@ class WineController < ApplicationController
 		@available_at = Time.now
 		@wine = Wine.all
 	end
+
+	def show
+		@wine = Wine.find(params[:id])
+	end
+
 end
