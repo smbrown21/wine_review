@@ -5,9 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Wine.create(name: 'Wine 1',year: '1970', winery: 'Charlottesville', country: 'USA', varietal: 'Chardonnay')
-Wine.create(name: 'Wine 2',year: '1984', winery: 'Napa Valley', country: 'USA', varietal: 'Pinot Noir')
-Wine.create(name: 'Wine 3',year: '1998', winery: 'California', country: 'USA', varietal: 'Pinot Grigiot')
-Wine.create(name: 'Wine 4',year: '2010', winery: 'Loudon County', country: 'USA', varietal: 'Mascoto')
-Wine.create(name: 'Wine 5',year: '2001', winery: 'Charlottesville', country: 'USA', varietal: 'Chardonnay')
+Wine.create(name: 'Blackstone',year: '1990', winery: 'California', country: 'USA', varietal: 'Merlot')
+Wine.create(name: 'Geyser Peak',year: '1994', winery: 'California', country: 'USA', varietal: 'Sauvignon Blanc')
+Wine.create(name: 'Yalumba',year: '1998', winery: 'Barossa Valley', country: 'Australia', varietal: 'Shiraz Viognier')
+Wine.create(name: 'Folonari',year: '2010', winery: 'Italian vineyard', country: 'Italy', varietal: 'Pinot Grigio')
+Wine.create(name: 'Rodney Strong',year: '2001', winery: 'Sonoma County', country: 'USA', varietal: 'Chardonnay')
 
