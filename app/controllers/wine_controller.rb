@@ -8,4 +8,20 @@ class WineController < ApplicationController
 		@wine = Wine.find(params[:id])
 	end
 
+	def new 
+		@wine = Wine.new
+	end
+
+	def create
+		@wine = Wine.new(wine_params)
+		@wine.save
+		redirect_to @wine
+	end
+
+	private
+
+	def wine_params
+		params.require(:wine).permit(:name, :year, :winery, :country, :varietal)
+	end
+	
 end
