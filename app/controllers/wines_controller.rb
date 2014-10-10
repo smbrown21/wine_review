@@ -1,4 +1,4 @@
-class WineController < ApplicationController
+class WinesController < ApplicationController
 	before_action :set_wine, only: [ :show, :edit, :update, :destroy]	
 
 	def index
