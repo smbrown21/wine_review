@@ -3,7 +3,7 @@ class WinesController < ApplicationController
 
 	def index
 		@available_at = Time.now
-		@wine = Wine.all
+		@wines = Wine.order(:name).page(params[:page])
 	end
 
 	def show
