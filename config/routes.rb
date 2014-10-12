@@ -1,5 +1,6 @@
 WineReview::Application.routes.draw do
  resources :wines
+ root 'wines#index'
  # get "/wines" => "wine#index", as: 'wines'
   #get "/wine/new" => "wine#new", as: 'new_wine'
   #get "/wine/:id" => "wine#show", as: 'wine'
