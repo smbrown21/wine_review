@@ -3,12 +3,11 @@ class WinesController < ApplicationController
 
 	def index
 		@available_at = Time.now
-		@wines = Wine.order(:name).page(params[:page])
+		@wines = Wine.includes(:log_entries).order(:name).page(params[:page])
 	end
 
 	def show
-		
-	end
+		end
 
 	def new 
 		@wine = Wine.new
@@ -24,8 +23,8 @@ class WinesController < ApplicationController
 	end
 
 	def edit
+		end
 		
-	end
 	def update
 		if @wine.update(wine_params)
 			redirect_to @wine, notice: "#{@wine.name} was created!"
