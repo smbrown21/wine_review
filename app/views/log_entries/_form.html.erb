@@ -13,4 +13,10 @@
     <%= f.submit %>
     <%= link_to 'Cancel', wine_log_entries_path(@wine), id: 'cancel_log_entry' %>
   </p>
+  <br/>
+  <p>
+<%= f.label :tasted_on %>
+<%= f.date_select :tasted_on %>
+</p>
+
 <% end %>
