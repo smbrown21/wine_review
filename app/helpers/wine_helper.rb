@@ -7,7 +7,7 @@ def format_average_rating(wine)
   if average
     pluralize(number_with_precision(average, precision: 1), 'rating')
   else
-    'No log_entries'
+    'No log entries'
   end
 end
 
