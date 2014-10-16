@@ -8,15 +8,15 @@
     <%= f.radio_button :rating, ratings %> <%= ratings %>
   <% end %><br />
   <%= f.label :comments %><br/>
-  <%= f.text_area :comments %><br/>
+  <%= f.text_area :comments %><br/><br/>
+<p>
+<%= f.label :tasted_on %>
+<%= f.date_select :tasted_on %>
+</p>
+<br/>
   <p>
     <%= f.submit %>
     <%= link_to 'Cancel', wine_log_entries_path(@wine), id: 'cancel_log_entry' %>
   </p>
-  <br/>
-  <p>
-<%= f.label :tasted_on %>
-<%= f.date_select :tasted_on %>
-</p>
 
 <% end %>
