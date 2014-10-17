@@ -2,7 +2,7 @@ class LogEntriesController < ApplicationController
 before_action :set_wine
 
 def index
-  @log_entries = @wine.log_entries.order('created_at desc')
+  @log_entries = @wine.log_entries.order('tasted_on desc')
 end
 
 def new
@@ -21,7 +21,7 @@ end
 private
 
 def log_entries_params
-	params.require(:log_entry).permit(:rating, :name, :comments)
+	params.require(:log_entry).permit(:rating, :name, :comments,:tasted_on)
 end
 
 def set_wine
